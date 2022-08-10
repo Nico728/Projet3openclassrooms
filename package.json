@@ -1,0 +1,19 @@
+{
+  "name": "projet3oc",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nico728/Projet3openclassrooms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nico728/Projet3openclassrooms/issues"
+  },
+  "homepage": "https://github.com/Nico728/Projet3openclassrooms#readme"
+}
