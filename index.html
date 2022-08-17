@@ -1,11 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://kit.fontawesome.com/12b5fca69d.js" crossorigin="anonymous"></script>
         <title>Ohmyfood!</title>
     </head>
+
     <body>
-        
+        <header class="header">
+            <img class="header__logo" src="img/logoOMF.png" alt="Logo Ohmyfood"/>
+        </header>
+
+        <div class="localisation">
+            <i class="localisation__logo fa-solid fa-location-dot"></i>
+            <p class="localisation__texte">Paris,  Belleville</p>
+        </div>
+
+        <div class="decouverte">
+            <h1 class="decouverte__titre">Réservez le menu qui vous convient</h1>
+            <p class="decouverte__soustitre">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#bouton" class="decouverte__cliquebouton"><div class="decouverte__bouton">Explorer nos restaurants</div></a>
+        </div>
+
+        <section class="fonctionnement">
+            <h1 class="fonctionnement__titre">Fonctionnement</h1>
+            <div class="fonctionnement__listepresentation">
+                <div class="fonctionnement__presentation">
+                    <div class="fonctionnement__numero">1</div>
+                    <div class="fonctionnement__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div class="fonctionnement__texte">Choisissez un restaurant</div>
+                </div>
+                <div class="fonctionnement__presentation">
+                    <div class="fonctionnement__numero">2</div>
+                    <div class="fonctionnement__icon"><i class="fa-solid fa-list"></i></div>
+                    <div class="fonctionnement__texte">Composez votre menu</div>
+                </div>
+                <div class="fonctionnement__presentation">
+                    <div class="fonctionnement__numero">3</div>
+                    <div class="fonctionnement__icon"><i class="fa-solid fa-store"></i></div>
+                    <div class="fonctionnement__texte">Degustez au restaurant</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="restaurant">
+            <h1 class="restaurant__titre">Restaurants</h1>
+            <div class="restaurant__cadre">
+                <a href="#resto" class="restaurant__cliquecadre">
+                    <div class="restaurant__photo">
+                        <img class="restaurant__imgreglage" src="img/lapalettedugout.jpg" alt="La palette du goût">
+                        <div class="restaurant__imgtexte">Nouveau</div>
+                    </div>
+                    <div class="restaurant__nom"><h3>La palette du goût</h3></div>
+                    <div class="restaurant__lieu">Ménilmontant</div>
+                </a>
+            </div>
+            <div class="restaurant__cadre">
+                <a href="#resto" class="restaurant__cliquecadre">
+                    <div class="restaurant__photo">
+                        <img class="restaurant__imgreglage" src="img/lanoteenchantee.jpg" alt="La note enchantée">
+                        <div class="restaurant__imgtexte">Nouveau</div>
+                    </div>
+                    <div class="restaurant__nom"><h3>La note enchantée</h3></div>
+                    <div class="restaurant__lieu">Charonne</div>
+                </a>
+            </div>
+            <div class="restaurant__cadre">
+                <a href="#resto" class="restaurant__cliquecadre">
+                    <div class="restaurant__photo">
+                        <img class="restaurant__imgreglage" src="img/alafrancaise.jpg" alt="à la française">
+                        <div class="restaurant__imgtexte">Nouveau</div>
+                    </div>
+                    <div class="restaurant__nom"><h3>À la française</h3></div>
+                    <div class="restaurant__lieu">Cité rouge</div>
+                </a>
+            </div>
+            <div class="restaurant__cadre">
+                <a href="#resto" class="restaurant__cliquecadre">
+                    <div class="restaurant__photo">
+                        <img class="restaurant__imgreglage" src="img/ledelicedessens.jpg" alt="Le délice des sens">
+                    </div>
+                    <div class="restaurant__nom"><h3>Le délice des sens</h3></div>
+                    <div class="restaurant__lieu">Folie-Méricourt</div>
+                </a>
+            </div>
+        </section>
     </body>  
 </html>
