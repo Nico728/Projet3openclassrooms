@@ -26,17 +26,15 @@ body, html {
 }
 .header {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   padding-bottom: 8px;
   padding-top: 24px;
   box-shadow: 0px 5px 5px lightgrey;
   margin-bottom: 5px;
 }
-.header .header__logo {
+.header__logo {
   width: 160px;
-  height: 30px;
+  margin: auto;
 }
 
 .localisation {
@@ -47,10 +45,10 @@ body, html {
   background-color: #ebebeb;
   height: 45px;
 }
-.localisation .localisation__texte {
+.localisation__texte {
   font-weight: bolder;
 }
-.localisation .localisation__logo {
+.localisation__logo {
   margin-right: 17px;
   margin-left: -25px;
 }
@@ -59,31 +57,31 @@ body, html {
   background-color: #f6f6f6;
   padding-bottom: 50px;
 }
-.decouverte .decouverte__titre {
+.decouverte__titre {
+  text-align: center;
   margin: 0px 70px 0px 70px;
   padding-top: 40px;
   text-align: center;
   font-size: 22px;
-  text-align: center;
 }
 .decouverte .decouverte__soustitre {
-  margin: 15px;
   text-align: center;
+  margin: 15px;
 }
 .decouverte .decouverte__cliquebouton {
   text-decoration: none;
   color: #FFF;
 }
 .decouverte .decouverte__bouton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #9356DC;
   border-radius: 25px;
   width: 210px;
   height: 50px;
   margin: auto;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fonctionnement {

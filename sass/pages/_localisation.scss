@@ -1,0 +1,13 @@
+.localisation{
+    @include flex-centre;
+    color: $colour-grey;
+    background-color: #ebebeb;
+    height: 45px;
+    &__texte{
+        font-weight: bolder;
+    }
+    &__logo{
+        margin-right: 17px;
+        margin-left: -25px;
+    }
+}

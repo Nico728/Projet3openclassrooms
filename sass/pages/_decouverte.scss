@@ -1,0 +1,28 @@
+.decouverte{
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+    &__titre{
+        @include text-align-centre;
+        margin: 0px 70px 0px 70px;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 22px;
+    }
+    &__soustitre{
+        @include text-align-centre;
+        margin: 15px;
+    }
+    &__cliquebouton{
+        text-decoration: none;
+        color: $colour-white;
+    }
+    &__bouton{
+        @include flex-centre;
+        background-color: $colour-primary;
+        border-radius: 25px;
+        width: 210px;
+        height: 50px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}

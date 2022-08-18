@@ -1,0 +1,43 @@
+.fonctionnement{
+    @include mobile-only;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    &__titre{
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    &__listepresentation{
+        @include mobile-only;
+        @include flex-centre;
+    }
+    &__presentation{
+        @include row-spacebetween;
+        box-shadow: 0px 5px 10px lightgrey;
+        margin: 10px;
+        margin-left: 25px;
+        width: 320px;
+        height: 75px;
+        border-radius: 20px;
+        background-color: #f6f6f6;
+    }
+    &__numero{
+        margin-left: -15px;
+        background-color: $colour-primary;
+        color: $colour-white;
+        width: 25px;
+        height: 25px;
+        padding-top: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        border-radius: 25px;
+    }
+    &__icon{
+        font-size: 22px;
+        color: grey;
+    }
+    &__texte{
+        margin-right: 90px;
+        font-weight: bold;
+    }
+}

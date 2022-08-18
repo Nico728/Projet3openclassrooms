@@ -1,0 +1,29 @@
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+@mixin tablette-pc {
+    @media screen and (max-width: map-get($breakpoints, tablette-pc)){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@mixin flex-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+@mixin text-align-centre {
+    text-align: center;
+}
+@mixin row-spacebetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
