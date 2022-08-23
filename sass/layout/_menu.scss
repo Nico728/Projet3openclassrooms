@@ -1,0 +1,66 @@
+.menu{
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+    &__titreentree{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        width: 30px;
+        border-bottom: 2px solid #99E2D0;
+    }
+    &__entree{
+        @include column-spacebetween;
+        @include flex-centre;
+        @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    &__choix{
+        @include row-spacebetween;
+        background-color: $colour-white;
+        width: 320px;
+        height: 70px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        box-shadow: 0px 5px 10px lightgray;
+    }
+    &__nomdescription{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    &__nom{
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    &__description{
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    &__prix{
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+    &__tarif{
+        font-weight: bold;
+    }
+    &__cliquebouton{
+        text-decoration: none;
+        color: $colour-white;
+    }
+    &__bouton{
+        @include flex-centre;
+        background-color: $colour-primary;
+        border-radius: 25px;
+        width: 210px;
+        height: 50px;
+        margin: auto;
+        margin-top: 30px;
+    }
+}

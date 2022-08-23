@@ -1,12 +1,5 @@
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-}
 @mixin tablette-pc {
-    @media screen and (max-width: map-get($breakpoints, tablette-pc)){
+    @media screen and (min-width: map-get($breakpoints, tablette-pc)){
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -26,4 +19,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+@mixin column-spacebetween {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin center-baseline {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+@mixin wrap {
+    display: flex;
+    flex-wrap: wrap;
 }

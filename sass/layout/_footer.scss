@@ -1,0 +1,44 @@
+.footer{
+    background-color: #353535;
+    color: $colour-white;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    &__titre{
+        font-family: shrikhand;
+        font-size: 17px;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+    &__groupe{
+        @include column-spacebetween;
+        @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__logo{
+        display: flex;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    &__logo2{
+        display: flex;
+        align-items: baseline;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    &__logotexte{
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    &__logotexte2{
+        margin-left: 8px;
+        font-size: 15px; 
+    }
+    &__texte{
+        margin-bottom: 5px;
+    }
+}

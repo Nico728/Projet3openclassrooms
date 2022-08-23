@@ -1,9 +1,27 @@
 .restaurant{
     background-color: #f6f6f6;
+    padding-bottom: 40px;
+    &__titre{
+        margin-top: 55px;
+        margin-left: -180px;
+    }
+    &__groupe{
+        @include column-spacebetween;
+        @include flex-centre;
+        @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+            @include row-spacebetween;
+            @include wrap;
+        }
+    }
     &__cadre{
-        width: 300px;
+        width: 90%;
+        margin-bottom: 20px;
         background-color: $colour-white;
         border-radius: 15px;
+        box-shadow: 0px 3px 5px lightgrey;
+        @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+            width: 40%;
+        }
     }
     &__cliquecadre{
         text-decoration: none;
@@ -17,25 +35,41 @@
     }
     &__imgreglage{
         width: 100%;
-        height: 160px;
+        height: 180px;
         overflow: hidden;
         object-fit: cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        position: relative;
+        z-index: 1;
     }
     &__imgtexte{
+        @include flex-centre;
         position: absolute;
         background-color: #99E2D0;
-        color: #008766;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: $colour-green;
         width: 80px;
         height: 25px;
-        margin-left: 210px;
-        margin-top: -150px;
+        margin-left: 240px;
+        margin-top: -170px;
         border-radius: 3px;
         font-size: 13px;
         font-weight: bold;
+        z-index: 2;
+    }
+    &__nom{
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+    &__lieu{
+        margin-left: 10px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    &__coeur{
+        position: absolute;
+        margin-top: -55px;
+        margin-left: 280px;
+        font-size: 25px;
     }
 }
