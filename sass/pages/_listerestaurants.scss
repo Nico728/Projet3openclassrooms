@@ -4,13 +4,19 @@
     &__titre{
         margin-top: 55px;
         margin-left: -180px;
+        @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+            margin-left: 20px;
+            padding-top: 20px;
+        }
     }
     &__groupe{
         @include column-spacebetween;
         @include flex-centre;
         @media screen and (min-width: map-get($breakpoints, tablette-pc)){
-            @include row-spacebetween;
+            @include row-around;
             @include wrap;
+            margin-left: 50px;
+            margin-right: 50px;
         }
     }
     &__cadre{
@@ -20,7 +26,7 @@
         border-radius: 15px;
         box-shadow: 0px 3px 5px lightgrey;
         @media screen and (min-width: map-get($breakpoints, tablette-pc)){
-            width: 40%;
+            width: 45%;
         }
     }
     &__cliquecadre{

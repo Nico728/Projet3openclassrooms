@@ -2,7 +2,7 @@
     background-color: #f6f6f6;
     padding-bottom: 50px;
     &__titreentree{
-        font-size: 15px;
+        @extend %size;
         font-weight: bold;
         margin: 0;
         padding-top: 20px;
@@ -32,7 +32,7 @@
     }
     &__nomdescription{
         margin-left: 10px;
-        font-size: 15px;
+        @extend %size;
     }
     &__nom{
         font-weight: bold;
@@ -41,7 +41,7 @@
     }
     &__description{
         margin-top: 5px;
-        font-size: 15px;
+        @extend %size;
     }
     &__prix{
         margin-top: 25px;
@@ -56,11 +56,16 @@
     }
     &__bouton{
         @include flex-centre;
-        background-color: $colour-primary;
+        background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
+        box-shadow: 0px 5px 10px lightgray;
         border-radius: 25px;
         width: 210px;
         height: 50px;
         margin: auto;
         margin-top: 30px;
+        &:hover{
+            background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+            font-weight: bold;
+        }
     }
 }

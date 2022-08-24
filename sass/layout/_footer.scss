@@ -19,9 +19,19 @@
             align-items: center;
         }
     }
+    &__cliquecadre{
+        text-decoration: none;
+        color: $colour-white;
+        &:hover{
+            color: adjust-hue($color: $colour-primary, $degrees: 10);
+            @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+            border-bottom: 1px solid adjust-hue($color: $colour-primary, $degrees: 10);
+            }
+        }
+    }
     &__logo{
         display: flex;
-        font-size: 15px;
+        @extend %size;
         margin-bottom: 5px;
     }
     &__logo2{
@@ -32,11 +42,11 @@
     }
     &__logotexte{
         margin-left: 10px;
-        font-size: 15px;
+        @extend %size;
     }
     &__logotexte2{
         margin-left: 8px;
-        font-size: 15px; 
+        @extend %size; 
     }
     &__texte{
         margin-bottom: 5px;

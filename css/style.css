@@ -20,6 +20,10 @@ body, html {
   font-family: "shrikhand";
   src: url("/fonts/shrikhand/Shrikhand-Regular.ttf");
 }
+.menu__description, .menu__nomdescription, .menu__titreentree, .footer__logotexte2, .footer__logotexte, .footer__logo {
+  font-size: 15px;
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -67,9 +71,20 @@ body, html {
     align-items: center;
   }
 }
+.footer__cliquecadre {
+  text-decoration: none;
+  color: #FFF;
+}
+.footer__cliquecadre:hover {
+  color: #a956dc;
+}
+@media screen and (min-width: 768px) {
+  .footer__cliquecadre:hover {
+    border-bottom: 1px solid #a956dc;
+  }
+}
 .footer__logo {
   display: flex;
-  font-size: 15px;
   margin-bottom: 5px;
 }
 .footer__logo2 {
@@ -80,11 +95,9 @@ body, html {
 }
 .footer__logotexte {
   margin-left: 10px;
-  font-size: 15px;
 }
 .footer__logotexte2 {
   margin-left: 8px;
-  font-size: 15px;
 }
 .footer__texte {
   margin-bottom: 5px;
@@ -95,7 +108,6 @@ body, html {
   padding-bottom: 50px;
 }
 .menu__titreentree {
-  font-size: 15px;
   font-weight: bold;
   margin: 0;
   padding-top: 20px;
@@ -134,7 +146,6 @@ body, html {
 }
 .menu__nomdescription {
   margin-left: 10px;
-  font-size: 15px;
 }
 .menu__nom {
   font-weight: bold;
@@ -143,7 +154,6 @@ body, html {
 }
 .menu__description {
   margin-top: 5px;
-  font-size: 15px;
 }
 .menu__prix {
   margin-top: 25px;
@@ -160,12 +170,17 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 0px 5px 10px lightgray;
   border-radius: 25px;
   width: 210px;
   height: 50px;
   margin: auto;
   margin-top: 30px;
+}
+.menu__bouton:hover {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  font-weight: bold;
 }
 
 .photo {
@@ -208,6 +223,12 @@ body, html {
   margin-top: 55px;
   margin-left: -180px;
 }
+@media screen and (min-width: 768px) {
+  .restaurant__titre {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+}
 .restaurant__groupe {
   display: flex;
   flex-direction: column;
@@ -220,10 +241,12 @@ body, html {
   .restaurant__groupe {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 .restaurant__cadre {
@@ -235,7 +258,7 @@ body, html {
 }
 @media screen and (min-width: 768px) {
   .restaurant__cadre {
-    width: 40%;
+    width: 45%;
   }
 }
 .restaurant__cliquecadre {
@@ -387,12 +410,17 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #9356DC;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  box-shadow: 0px 5px 10px lightgray;
   border-radius: 25px;
   width: 210px;
   height: 50px;
   margin: auto;
   margin-top: 30px;
+}
+.decouverte__bouton:hover {
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
