@@ -282,15 +282,12 @@ body, html {
   z-index: 1;
 }
 .restaurant__imgtexte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   background-color: #99E2D0;
   color: #008766;
   width: 80px;
   height: 25px;
-  margin-left: 240px;
+  margin-left: 70%;
   margin-top: -170px;
   border-radius: 3px;
   font-size: 13px;

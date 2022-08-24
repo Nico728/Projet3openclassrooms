@@ -50,13 +50,12 @@
         z-index: 1;
     }
     &__imgtexte{
-        @include flex-centre;
         position: absolute;
         background-color: #99E2D0;
         color: $colour-green;
         width: 80px;
         height: 25px;
-        margin-left: 240px;
+        margin-left: 70%;
         margin-top: -170px;
         border-radius: 3px;
         font-size: 13px;
