@@ -22,7 +22,10 @@
         margin-left: 20px;
     }
     &__logo{
+        position: absolute;
         font-size: 25px;
-        margin-right: 45px;
+        right: 50px;
+        top: 25px;
+        color: black;
     }
 }

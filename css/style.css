@@ -211,8 +211,11 @@ body, html {
   margin-left: 20px;
 }
 .nomcoeur__logo {
+  position: absolute;
   font-size: 25px;
-  margin-right: 45px;
+  right: 50px;
+  top: 25px;
+  color: black;
 }
 
 .restaurant {
@@ -311,16 +314,22 @@ body, html {
   top: 200px;
   right: 30px;
   font-size: 25px;
-  transition: opacity 500ms ease-in-out;
-  z-index: 1;
-  transform: scale(1);
 }
-.restaurant__coeur:hover {
-  transform: scale(1.5);
-  transition: opacity 500ms ease-in-out;
-  z-index: 0;
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
-  transform-origin: center;
+
+.coeurplein {
+  opacity: 0;
+}
+.coeurplein:hover {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom left, #9356DC, #FF79DA);
+  opacity: 1;
+  transition: opacity 1000ms ease-in-out;
+}
+
+.coeurvide {
+  opacity: 1;
 }
 
 .fonctionnement {

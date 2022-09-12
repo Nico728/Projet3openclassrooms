@@ -77,15 +77,21 @@
         top: 200px;
         right: 30px;
         font-size: 25px;
-        transition: opacity 500ms ease-in-out;
-        z-index: 1;
-        transform: scale(1);
-        &:hover{
-            transform: scale(1.5);
-            transition: opacity 500ms ease-in-out;
-            z-index: 0;
-            background: linear-gradient(to bottom, $colour-primary , $colour-secondary);
-            transform-origin: center;
-        }
     }
+}
+
+.coeurplein{
+	opacity: 0;
+	&:hover{
+		color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+		background-image: linear-gradient(to bottom left, $colour-primary, $colour-secondary);
+		opacity: 1;
+		transition: opacity 1000ms ease-in-out;
+	}
+}
+
+.coeurvide{
+	opacity: 1;
 }
