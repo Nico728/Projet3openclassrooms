@@ -40,3 +40,8 @@
     display: flex;
     flex-wrap: wrap;
 }
+@mixin animation-3-points {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
