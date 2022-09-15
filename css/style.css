@@ -138,13 +138,19 @@ body, html {
   justify-content: space-between;
   align-items: center;
   background-color: #FFF;
-  width: 320px;
+  width: 90%;
   height: 70px;
   margin-bottom: 10px;
   border-radius: 15px;
   box-shadow: 0px 5px 10px lightgray;
   position: relative;
   overflow: hidden;
+  animation: apparitionmenu 2s ease-in-out;
+}
+@media screen and (min-width: 768px) {
+  .menu__choix {
+    width: 23%;
+  }
 }
 .menu__choix:hover .correcte {
   transform: translateX(0);
@@ -180,6 +186,7 @@ body, html {
 .menu__prix {
   margin-top: 25px;
   margin-right: 20px;
+  transition-duration: 1000ms;
 }
 .menu__tarif {
   font-weight: bold;
@@ -229,6 +236,32 @@ body, html {
   }
   100% {
     transform: rotate(0);
+  }
+}
+.menu__choix:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.menu__choix:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.menu__choix:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.menu__choix:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+@keyframes apparitionmenu {
+  0% {
+    transform: scale(0);
+    transform-origin: left 0%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: left right;
   }
 }
 .photo {

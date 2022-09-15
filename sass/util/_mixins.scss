@@ -45,3 +45,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+@mixin width23 {
+    @media screen and (min-width: map-get($breakpoints, tablette-pc)){
+        width: 23%;
+    }
+}
