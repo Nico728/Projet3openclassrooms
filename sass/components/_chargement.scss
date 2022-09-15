@@ -1,0 +1,53 @@
+.chargement{
+    @include flex-centre;
+    color: $colour-primary;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom left, $colour-tertiary, $colour-secondary);
+    animation: chargementpage 3s ease-in-out forwards;
+    &__lettre{
+        font-family: shrikhand;
+        font-size: 70px;
+        animation: lettres 2s;
+    }
+    &__lettre-1{
+        animation-delay: 0.1s;
+    }
+    &__lettre-h{
+        animation-delay: 0.2s;
+    }
+    &__lettre-m{
+        animation-delay: 0.3s;
+    }
+    &__lettre-y{
+        animation-delay: 0.4s;
+    }
+    &__lettre-f{
+        animation-delay: 0.5s;
+    }
+    &__lettre-o-2{
+        animation-delay: 0.6s;
+    }
+    &__lettre-o-3{
+        animation-delay: 0.7s;
+    }
+    &__lettre-d{
+        animation-delay: 1s;
+    }
+}
+
+@keyframes lettres {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+
+@keyframes chargementpage {
+    100% {
+      visibility: hidden;
+    }
+}

@@ -490,4 +490,59 @@ body, html {
   font-weight: bold;
 }
 
+.chargement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9356DC;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, #99E2D0, #FF79DA);
+  animation: chargementpage 3s ease-in-out forwards;
+}
+.chargement__lettre {
+  font-family: shrikhand;
+  font-size: 70px;
+  animation: lettres 2s;
+}
+.chargement__lettre-1 {
+  animation-delay: 0.1s;
+}
+.chargement__lettre-h {
+  animation-delay: 0.2s;
+}
+.chargement__lettre-m {
+  animation-delay: 0.3s;
+}
+.chargement__lettre-y {
+  animation-delay: 0.4s;
+}
+.chargement__lettre-f {
+  animation-delay: 0.5s;
+}
+.chargement__lettre-o-2 {
+  animation-delay: 0.6s;
+}
+.chargement__lettre-o-3 {
+  animation-delay: 0.7s;
+}
+.chargement__lettre-d {
+  animation-delay: 1s;
+}
+
+@keyframes lettres {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes chargementpage {
+  100% {
+    visibility: hidden;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
