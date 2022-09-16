@@ -12,6 +12,7 @@
     &__groupe{
         @include column-spacebetween;
         @include flex-centre;
+        z-index: 0;
         @media screen and (min-width: map-get($breakpoints, tablette-pc)){
             @include row-around;
             @include wrap;
@@ -51,7 +52,7 @@
     }
     &__imgtexte{
         @include flex-centre;
-        background-color: #99E2D0;
+        background-color: $colour-tertiary;
         color: $colour-green;
         font-size: 15px;
         font-weight: bold;

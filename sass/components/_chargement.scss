@@ -2,13 +2,15 @@
     @include flex-centre;
     color: $colour-primary;
     position: fixed;
+    z-index: 3;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom left, $colour-tertiary, $colour-secondary);
     animation: chargementpage 3s ease-in-out forwards;
     &__lettre{
+        @include policechargement;
         font-family: shrikhand;
-        font-size: 70px;
+        font-size: 40px;
         animation: lettres 2s;
     }
     &__lettre-1{

@@ -9,7 +9,7 @@
         margin-bottom: 20px;
         margin-left: 20px;
         width: 30px;
-        border-bottom: 2px solid $colour-turquoise;
+        border-bottom: 2px solid $colour-tertiary;
     }
     &__entree{
         @include column-spacebetween;
@@ -72,16 +72,9 @@
     }
     &__bouton{
         @include flex-centre;
-        background: linear-gradient(to bottom, $colour-secondary, $colour-primary);
-        box-shadow: 0px 5px 10px lightgray;
-        border-radius: 25px;
-        width: 210px;
-        height: 50px;
-        margin: auto;
-        margin-top: 30px;
+        @include bouton;
         &:hover{
-            background: linear-gradient(to bottom, $colour-primary, $colour-secondary);
-            font-weight: bold;
+            @include bouton-hover;
         }
     }
 }
@@ -89,7 +82,7 @@
     @include flex-centre;
     color: $colour-white;
     position: absolute; 
-    background-color: $colour-turquoise;
+    background-color: $colour-tertiary;
     border-radius: 0px 15px 15px 0px;
     width: 65px;
     height: 70px;

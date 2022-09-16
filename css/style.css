@@ -114,7 +114,7 @@ body, html {
   margin-bottom: 20px;
   margin-left: 20px;
   width: 30px;
-  border-bottom: 2px solid #99e2d0;
+  border-bottom: 2px solid #99E2D0;
 }
 .menu__entree {
   display: flex;
@@ -208,7 +208,8 @@ body, html {
   margin-top: 30px;
 }
 .menu__bouton:hover {
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  filter: brightness(1.2);
+  box-shadow: 0px 1px 10px black;
   font-weight: bold;
 }
 
@@ -218,7 +219,7 @@ body, html {
   align-items: center;
   color: #FFF;
   position: absolute;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   width: 65px;
   height: 70px;
@@ -320,6 +321,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 @media screen and (min-width: 768px) {
   .restaurant__groupe {
@@ -519,7 +521,8 @@ body, html {
   margin-top: 30px;
 }
 .decouverte__bouton:hover {
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
+  filter: brightness(1.2);
+  box-shadow: 0px 1px 10px black;
   font-weight: bold;
 }
 
@@ -529,6 +532,7 @@ body, html {
   align-items: center;
   color: #9356DC;
   position: fixed;
+  z-index: 3;
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom left, #99E2D0, #FF79DA);
@@ -536,8 +540,13 @@ body, html {
 }
 .chargement__lettre {
   font-family: shrikhand;
-  font-size: 70px;
+  font-size: 40px;
   animation: lettres 2s;
+}
+@media screen and (min-width: 768px) {
+  .chargement__lettre {
+    font-size: 70px;
+  }
 }
 .chargement__lettre-1 {
   animation-delay: 0.1s;
