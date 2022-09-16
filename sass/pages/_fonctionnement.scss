@@ -24,6 +24,13 @@
         height: 75px;
         border-radius: 20px;
         background-color: #f6f6f6;
+        &:hover{
+            box-shadow: 0px 1px 10px black;
+            background-color: #f5edff;
+        }
+        &:hover .fonctionnement__icon{
+            color: $colour-primary;
+        }
     }
     &__numero{
         @include center-baseline;
