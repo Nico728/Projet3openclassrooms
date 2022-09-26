@@ -2,8 +2,8 @@
     background-color: #f6f6f6;
     padding-bottom: 40px;
     &__titre{
-        margin-top: 55px;
-        margin-left: -180px;
+        padding-top: 20px;
+        margin-left: 20px;
         @media screen and (min-width: map-get($breakpoints, tablette-pc)){
             margin-left: 20px;
             padding-top: 20px;
